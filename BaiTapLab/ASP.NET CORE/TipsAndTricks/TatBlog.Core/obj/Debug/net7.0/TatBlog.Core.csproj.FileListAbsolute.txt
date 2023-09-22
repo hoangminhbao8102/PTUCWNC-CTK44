@@ -1,0 +1,11 @@
+E:\PhatTrienUngDungWebNangCao\PTUCWNC-CTK44\BaiTapLab\ASP.NET CORE\TipsAndTricks\TatBlog.Core\bin\Debug\net7.0\TatBlog.Core.deps.json
+E:\PhatTrienUngDungWebNangCao\PTUCWNC-CTK44\BaiTapLab\ASP.NET CORE\TipsAndTricks\TatBlog.Core\bin\Debug\net7.0\TatBlog.Core.dll
+E:\PhatTrienUngDungWebNangCao\PTUCWNC-CTK44\BaiTapLab\ASP.NET CORE\TipsAndTricks\TatBlog.Core\bin\Debug\net7.0\TatBlog.Core.pdb
+E:\PhatTrienUngDungWebNangCao\PTUCWNC-CTK44\BaiTapLab\ASP.NET CORE\TipsAndTricks\TatBlog.Core\obj\Debug\net7.0\TatBlog.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\PhatTrienUngDungWebNangCao\PTUCWNC-CTK44\BaiTapLab\ASP.NET CORE\TipsAndTricks\TatBlog.Core\obj\Debug\net7.0\TatBlog.Core.AssemblyInfoInputs.cache
+E:\PhatTrienUngDungWebNangCao\PTUCWNC-CTK44\BaiTapLab\ASP.NET CORE\TipsAndTricks\TatBlog.Core\obj\Debug\net7.0\TatBlog.Core.AssemblyInfo.cs
+E:\PhatTrienUngDungWebNangCao\PTUCWNC-CTK44\BaiTapLab\ASP.NET CORE\TipsAndTricks\TatBlog.Core\obj\Debug\net7.0\TatBlog.Core.csproj.CoreCompileInputs.cache
+E:\PhatTrienUngDungWebNangCao\PTUCWNC-CTK44\BaiTapLab\ASP.NET CORE\TipsAndTricks\TatBlog.Core\obj\Debug\net7.0\TatBlog.Core.dll
+E:\PhatTrienUngDungWebNangCao\PTUCWNC-CTK44\BaiTapLab\ASP.NET CORE\TipsAndTricks\TatBlog.Core\obj\Debug\net7.0\refint\TatBlog.Core.dll
+E:\PhatTrienUngDungWebNangCao\PTUCWNC-CTK44\BaiTapLab\ASP.NET CORE\TipsAndTricks\TatBlog.Core\obj\Debug\net7.0\TatBlog.Core.pdb
+E:\PhatTrienUngDungWebNangCao\PTUCWNC-CTK44\BaiTapLab\ASP.NET CORE\TipsAndTricks\TatBlog.Core\obj\Debug\net7.0\ref\TatBlog.Core.dll
