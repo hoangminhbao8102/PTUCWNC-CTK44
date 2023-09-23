@@ -311,10 +311,10 @@ namespace TatBlog.Data.Seeders
                     Meta = "ASP.NET Core, diagnostics, error handling, performance optimization, logging, troubleshooting",
                     UrlSlug = "asp-net-core-diagnostic-scenarios",
                     ImageUrl = "",
-                    ViewCount = 100,
+                    ViewCount = 10,
                     Published = true,
                     PostedDate = new DateTime(2021, 9, 30, 10, 20, 0),
-                    ModifiedDate = DateTime.Now,
+                    ModifiedDate = null,
                     Category = categories[0],
                     Author = authors[0],
                     Tags = new List<Tag>()
@@ -325,15 +325,15 @@ namespace TatBlog.Data.Seeders
                 new()
                 {
                     Title = "How to create Front-end with Vue.js",
-                    ShortDescription = "Short description for the first post.",
-                    Description = "Full description for the first post.",
-                    Meta = "meta, tags, keywords",
-                    UrlSlug = "first-post",
-                    ImageUrl = "first-post.jpg",
-                    ViewCount = 100,
+                    ShortDescription = "Learn how to build powerful front-end applications using Vue.js",
+                    Description = "In this article, we will explore the process of creating a front-end with Vue.js. Vue.js is a popular JavaScript framework that allows developers to build interactive and dynamic user interfaces. We will cover the basics of Vue.js, including its components, directives, and state management. By the end of this article, you will have a solid understanding of how to create front-end applications with Vue.js.",
+                    Meta = "Front-end development, Vue.js, JavaScript",
+                    UrlSlug = "how-to-create-front-end-with-vue-js",
+                    ImageUrl = "",
+                    ViewCount = 15,
                     Published = true,
-                    PostedDate = DateTime.Now,
-                    ModifiedDate = DateTime.Now,
+                    PostedDate = new DateTime(2021, 6, 22, 14, 15, 0),
+                    ModifiedDate = null,
                     Category = categories[1],
                     Author = authors[1],
                     Tags = new List<Tag>()
@@ -343,21 +343,21 @@ namespace TatBlog.Data.Seeders
                 },
                 new()
                 {
-                    Title = "First Post",
-                    ShortDescription = "Short description for the first post.",
-                    Description = "Full description for the first post.",
-                    Meta = "meta, tags, keywords",
-                    UrlSlug = "first-post",
-                    ImageUrl = "first-post.jpg",
-                    ViewCount = 100,
+                    Title = "How learning methods relate to machine learning methods",
+                    ShortDescription = "Explore the relationship between learning methods and machine learning",
+                    Description = "In this article, we will delve into the connection between learning methods and machine learning. We will discuss how traditional learning methods, such as supervised and unsupervised learning, form the foundation for machine learning algorithms. By understanding the principles and techniques of learning methods, we can better comprehend the functioning and applications of machine learning. Join us on this journey to uncover the interplay between learning methods and machine learning.",
+                    Meta = "Learning methods, machine learning, supervised learning, unsupervised learning",
+                    UrlSlug = "how-learning-methods-relate-to-machine-learning-methods",
+                    ImageUrl = "",
+                    ViewCount = 60,
                     Published = true,
-                    PostedDate = DateTime.Now,
-                    ModifiedDate = DateTime.Now,
-                    Category = categories[0],
-                    Author = authors[0],
+                    PostedDate = new DateTime(2021, 12, 10, 13, 55, 0),
+                    ModifiedDate = null,
+                    Category = categories[2],
+                    Author = authors[2],
                     Tags = new List<Tag>()
                     {
-                        tags[0]
+                        tags[2]
                     }
                 },
                 new()
@@ -372,11 +372,11 @@ namespace TatBlog.Data.Seeders
                     Published = true,
                     PostedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
-                    Category = categories[0],
-                    Author = authors[0],
+                    Category = categories[3],
+                    Author = authors[3],
                     Tags = new List<Tag>()
                     {
-                        tags[0]
+                        tags[3]
                     }
                 },
                 new()
@@ -391,11 +391,11 @@ namespace TatBlog.Data.Seeders
                     Published = true,
                     PostedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
-                    Category = categories[0],
-                    Author = authors[0],
+                    Category = categories[4],
+                    Author = authors[4],
                     Tags = new List<Tag>()
                     {
-                        tags[0]
+                        tags[4]
                     }
                 },
                 new()
@@ -410,11 +410,11 @@ namespace TatBlog.Data.Seeders
                     Published = true,
                     PostedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
-                    Category = categories[0],
-                    Author = authors[0],
+                    Category = categories[5],
+                    Author = authors[5],
                     Tags = new List<Tag>()
                     {
-                        tags[0]
+                        tags[5]
                     }
                 },
                 new()
@@ -429,11 +429,11 @@ namespace TatBlog.Data.Seeders
                     Published = true,
                     PostedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
-                    Category = categories[0],
-                    Author = authors[0],
+                    Category = categories[6],
+                    Author = authors[6],
                     Tags = new List<Tag>()
                     {
-                        tags[0]
+                        tags[6]
                     }
                 },
                 new()
@@ -448,11 +448,11 @@ namespace TatBlog.Data.Seeders
                     Published = true,
                     PostedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
-                    Category = categories[0],
-                    Author = authors[0],
+                    Category = categories[7],
+                    Author = authors[7],
                     Tags = new List<Tag>()
                     {
-                        tags[0]
+                        tags[7]
                     }
                 },
                 new()
@@ -467,11 +467,11 @@ namespace TatBlog.Data.Seeders
                     Published = true,
                     PostedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
-                    Category = categories[0],
-                    Author = authors[0],
+                    Category = categories[8],
+                    Author = authors[8],
                     Tags = new List<Tag>()
                     {
-                        tags[0]
+                        tags[8]
                     }
                 },
                 new()
@@ -486,11 +486,11 @@ namespace TatBlog.Data.Seeders
                     Published = true,
                     PostedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
-                    Category = categories[0],
-                    Author = authors[0],
+                    Category = categories[9],
+                    Author = authors[9],
                     Tags = new List<Tag>()
                     {
-                        tags[0]
+                        tags[9]
                     }
                 },
                 new()
@@ -505,11 +505,11 @@ namespace TatBlog.Data.Seeders
                     Published = true,
                     PostedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
-                    Category = categories[0],
-                    Author = authors[0],
+                    Category = categories[10],
+                    Author = authors[10],
                     Tags = new List<Tag>()
                     {
-                        tags[0]
+                        tags[10]
                     }
                 },
                 new()
@@ -524,11 +524,11 @@ namespace TatBlog.Data.Seeders
                     Published = true,
                     PostedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
-                    Category = categories[0],
-                    Author = authors[0],
+                    Category = categories[11],
+                    Author = authors[11],
                     Tags = new List<Tag>()
                     {
-                        tags[0]
+                        tags[11]
                     }
                 },
                 new()
@@ -543,11 +543,11 @@ namespace TatBlog.Data.Seeders
                     Published = true,
                     PostedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
-                    Category = categories[0],
-                    Author = authors[0],
+                    Category = categories[12],
+                    Author = authors[12],
                     Tags = new List<Tag>()
                     {
-                        tags[0]
+                        tags[12]
                     }
                 },
                 new()
@@ -562,11 +562,11 @@ namespace TatBlog.Data.Seeders
                     Published = true,
                     PostedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
-                    Category = categories[0],
-                    Author = authors[0],
+                    Category = categories[13],
+                    Author = authors[13],
                     Tags = new List<Tag>()
                     {
-                        tags[0]
+                        tags[13]
                     }
                 },
                 new()
@@ -581,11 +581,11 @@ namespace TatBlog.Data.Seeders
                     Published = true,
                     PostedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
-                    Category = categories[0],
-                    Author = authors[0],
+                    Category = categories[14],
+                    Author = authors[14],
                     Tags = new List<Tag>()
                     {
-                        tags[0]
+                        tags[14]
                     }
                 },
                 new()
@@ -600,11 +600,11 @@ namespace TatBlog.Data.Seeders
                     Published = true,
                     PostedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
-                    Category = categories[0],
-                    Author = authors[0],
+                    Category = categories[15],
+                    Author = authors[15],
                     Tags = new List<Tag>()
                     {
-                        tags[0]
+                        tags[15]
                     }
                 },
                 new()
@@ -619,11 +619,11 @@ namespace TatBlog.Data.Seeders
                     Published = true,
                     PostedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
-                    Category = categories[0],
-                    Author = authors[0],
+                    Category = categories[16],
+                    Author = authors[16],
                     Tags = new List<Tag>()
                     {
-                        tags[0]
+                        tags[16]
                     }
                 },
                 new()
@@ -638,11 +638,11 @@ namespace TatBlog.Data.Seeders
                     Published = true,
                     PostedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
-                    Category = categories[0],
-                    Author = authors[0],
+                    Category = categories[17],
+                    Author = authors[17],
                     Tags = new List<Tag>()
                     {
-                        tags[0]
+                        tags[17]
                     }
                 },
                 new()
@@ -657,11 +657,11 @@ namespace TatBlog.Data.Seeders
                     Published = true,
                     PostedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
-                    Category = categories[0],
-                    Author = authors[0],
+                    Category = categories[18],
+                    Author = authors[18],
                     Tags = new List<Tag>()
                     {
-                        tags[0]
+                        tags[18]
                     }
                 },
                 new()
@@ -676,11 +676,11 @@ namespace TatBlog.Data.Seeders
                     Published = true,
                     PostedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
-                    Category = categories[0],
-                    Author = authors[0],
+                    Category = categories[19],
+                    Author = authors[19],
                     Tags = new List<Tag>()
                     {
-                        tags[0]
+                        tags[19]
                     }
                 },
                 new()
@@ -695,11 +695,11 @@ namespace TatBlog.Data.Seeders
                     Published = true,
                     PostedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
-                    Category = categories[0],
-                    Author = authors[0],
+                    Category = categories[20],
+                    Author = authors[20],
                     Tags = new List<Tag>()
                     {
-                        tags[0]
+                        tags[20]
                     }
                 },
                 new()
@@ -714,11 +714,11 @@ namespace TatBlog.Data.Seeders
                     Published = true,
                     PostedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
-                    Category = categories[0],
-                    Author = authors[0],
+                    Category = categories[21],
+                    Author = authors[21],
                     Tags = new List<Tag>()
                     {
-                        tags[0]
+                        tags[21]
                     }
                 },
                 new()
@@ -733,11 +733,11 @@ namespace TatBlog.Data.Seeders
                     Published = true,
                     PostedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
-                    Category = categories[0],
-                    Author = authors[0],
+                    Category = categories[22],
+                    Author = authors[22],
                     Tags = new List<Tag>()
                     {
-                        tags[0]
+                        tags[22]
                     }
                 },
                 new()
@@ -752,11 +752,11 @@ namespace TatBlog.Data.Seeders
                     Published = true,
                     PostedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
-                    Category = categories[0],
-                    Author = authors[0],
+                    Category = categories[23],
+                    Author = authors[23],
                     Tags = new List<Tag>()
                     {
-                        tags[0]
+                        tags[23]
                     }
                 },
                 new()
@@ -771,11 +771,11 @@ namespace TatBlog.Data.Seeders
                     Published = true,
                     PostedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
-                    Category = categories[0],
-                    Author = authors[0],
+                    Category = categories[24],
+                    Author = authors[24],
                     Tags = new List<Tag>()
                     {
-                        tags[0]
+                        tags[24]
                     }
                 },
                 new()
@@ -790,11 +790,11 @@ namespace TatBlog.Data.Seeders
                     Published = true,
                     PostedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
-                    Category = categories[0],
-                    Author = authors[0],
+                    Category = categories[25],
+                    Author = authors[25],
                     Tags = new List<Tag>()
                     {
-                        tags[0]
+                        tags[25]
                     }
                 },
                 new()
@@ -809,11 +809,11 @@ namespace TatBlog.Data.Seeders
                     Published = true,
                     PostedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
-                    Category = categories[0],
-                    Author = authors[0],
+                    Category = categories[26],
+                    Author = authors[26],
                     Tags = new List<Tag>()
                     {
-                        tags[0]
+                        tags[26]
                     }
                 },
                 new()
@@ -828,11 +828,11 @@ namespace TatBlog.Data.Seeders
                     Published = true,
                     PostedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
-                    Category = categories[0],
-                    Author = authors[0],
+                    Category = categories[27],
+                    Author = authors[27],
                     Tags = new List<Tag>()
                     {
-                        tags[0]
+                        tags[27]
                     }
                 },
                 new()
@@ -847,11 +847,11 @@ namespace TatBlog.Data.Seeders
                     Published = true,
                     PostedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
-                    Category = categories[0],
-                    Author = authors[0],
+                    Category = categories[28],
+                    Author = authors[28],
                     Tags = new List<Tag>()
                     {
-                        tags[0]
+                        tags[28]
                     }
                 },
                 new()
@@ -866,11 +866,11 @@ namespace TatBlog.Data.Seeders
                     Published = true,
                     PostedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
-                    Category = categories[0],
-                    Author = authors[0],
+                    Category = categories[29],
+                    Author = authors[29],
                     Tags = new List<Tag>()
                     {
-                        tags[0]
+                        tags[29]
                     }
                 },
                 new()
@@ -885,11 +885,11 @@ namespace TatBlog.Data.Seeders
                     Published = true,
                     PostedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
-                    Category = categories[0],
-                    Author = authors[0],
+                    Category = categories[30],
+                    Author = authors[30],
                     Tags = new List<Tag>()
                     {
-                        tags[0]
+                        tags[30]
                     }
                 }
             };
