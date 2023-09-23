@@ -35,11 +35,20 @@ namespace TatBlog.Data.Seeders
             {
                 new()
                 {
-                    FullName = "Nguyễn Văn A",
-                    UrlSlug = "nguyen-van-a",
+                    FullName = "Jason Mouth",
+                    UrlSlug = "jason-mouth",
                     ImageUrl = "",
-                    JoinedDate = DateTime.Now,
-                    Email = "johndoe@example.com",
+                    JoinedDate = new DateTime(2022, 10, 21),
+                    Email = "json@gmail.com",
+                    Notes = ""
+                },
+                new()
+                {
+                    FullName = "Jessica Wonder",
+                    UrlSlug = "jessica-wonder",
+                    ImageUrl = "",
+                    JoinedDate = new DateTime(2020, 4, 19),
+                    Email = "jessica665@motip.com",
                     Notes = ""
                 },
                 new()
@@ -47,17 +56,8 @@ namespace TatBlog.Data.Seeders
                     FullName = "Nguyễn Văn A",
                     UrlSlug = "nguyen-van-a",
                     ImageUrl = "",
-                    JoinedDate = DateTime.Now,
-                    Email = "johndoe@example.com",
-                    Notes = ""
-                },
-                new()
-                {
-                    FullName = "Nguyễn Văn A",
-                    UrlSlug = "nguyen-van-a",
-                    ImageUrl = "",
-                    JoinedDate = DateTime.Now,
-                    Email = "johndoe@example.com",
+                    JoinedDate = new DateTime(2021, 12, 26),
+                    Email = "anv@gmail.com",
                     Notes = ""
                 },
                 new()
@@ -65,8 +65,8 @@ namespace TatBlog.Data.Seeders
                     FullName = "Trần Văn B",
                     UrlSlug = "tran-van-b",
                     ImageUrl = "",
-                    JoinedDate = DateTime.Now,
-                    Email = "johndoe@example.com",
+                    JoinedDate = new DateTime(2022, 3, 10),
+                    Email = "tranvanb@motip.com",
                     Notes = ""
                 },
                 new()
@@ -74,8 +74,8 @@ namespace TatBlog.Data.Seeders
                     FullName = "Nguyễn Thị C",
                     UrlSlug = "nguyen-thi-c",
                     ImageUrl = "",
-                    JoinedDate = DateTime.Now,
-                    Email = "johndoe@example.com",
+                    JoinedDate = new DateTime(2020, 4, 19),
+                    Email = "thic333@gmail.com",
                     Notes = ""
                 }
             };
@@ -305,26 +305,26 @@ namespace TatBlog.Data.Seeders
             {
                 new()
                 {
-                    Title = "First Post",
-                    ShortDescription = "Short description for the first post.",
-                    Description = "Full description for the first post.",
-                    Meta = "meta, tags, keywords",
-                    UrlSlug = "first-post",
-                    ImageUrl = "first-post.jpg",
+                    Title = "ASP.NET Core Diagnostic Scenarios",
+                    ShortDescription = "A comprehensive guide to ASP.NET Core diagnostic scenarios.",
+                    Description = "This article provides detailed information and solutions for common diagnostic scenarios in ASP.NET Core applications. It covers topics such as error handling, performance optimization, logging, and troubleshooting common issues.",
+                    Meta = "ASP.NET Core, diagnostics, error handling, performance optimization, logging, troubleshooting",
+                    UrlSlug = "asp-net-core-diagnostic-scenarios",
+                    ImageUrl = "",
                     ViewCount = 100,
                     Published = true,
-                    PostedDate = DateTime.Now,
+                    PostedDate = new DateTime(2021, 9, 30, 10, 20, 0),
                     ModifiedDate = DateTime.Now,
                     Category = categories[0],
                     Author = authors[0],
-                    Tags = new List<Tag>() 
-                    { 
-                        tags[0] 
+                    Tags = new List<Tag>()
+                    {
+                        tags[0]
                     }
                 },
                 new()
                 {
-                    Title = "First Post",
+                    Title = "How to create Front-end with Vue.js",
                     ShortDescription = "Short description for the first post.",
                     Description = "Full description for the first post.",
                     Meta = "meta, tags, keywords",
