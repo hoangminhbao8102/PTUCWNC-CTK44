@@ -72,3 +72,4 @@ E:\PhatTrienUngDungWebNangCao\PTUCWNC-CTK44\BaiTapLab\ASP.NET CORE\TipsAndTricks
 E:\PhatTrienUngDungWebNangCao\PTUCWNC-CTK44\BaiTapLab\ASP.NET CORE\TipsAndTricks\TatBlog.WinApp\obj\Debug\net7.0\TatBlog.WinApp.pdb
 E:\PhatTrienUngDungWebNangCao\PTUCWNC-CTK44\BaiTapLab\ASP.NET CORE\TipsAndTricks\TatBlog.WinApp\obj\Debug\net7.0\TatBlog.WinApp.genruntimeconfig.cache
 E:\PhatTrienUngDungWebNangCao\PTUCWNC-CTK44\BaiTapLab\ASP.NET CORE\TipsAndTricks\TatBlog.WinApp\obj\Debug\net7.0\ref\TatBlog.WinApp.dll
+E:\PhatTrienUngDungWebNangCao\PTUCWNC-CTK44\BaiTapLab\ASP.NET CORE\TipsAndTricks\TatBlog.WinApp\bin\Debug\net7.0\System.Linq.Dynamic.Core.dll

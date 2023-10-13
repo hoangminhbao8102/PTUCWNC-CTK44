@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "H5W+Ayn8mZ0/tm35O9+352JTsVhJx5cfzMfSrJtyUEyKU/ENUNFakNLYaaVcX9y6V32xAbJwj2+nInhexBqbIQ==",
+  "dgSpecHash": "xJ38cICR0594SQ0oPqvlB4NAEiZG/6vq+UxGhJcajAmkGLBjghfF1fdwm4qI5BnfNCHCQsx6QfilHU4zrFrt3g==",
   "success": true,
   "projectFilePath": "E:\\PhatTrienUngDungWebNangCao\\PTUCWNC-CTK44\\BaiTapLab\\ASP.NET CORE\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj",
   "expectedPackageFiles": [
@@ -41,6 +41,7 @@
     "C:\\Users\\Maxsys\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
     "C:\\Users\\Maxsys\\.nuget\\packages\\system.formats.asn1\\5.0.0\\system.formats.asn1.5.0.0.nupkg.sha512",
     "C:\\Users\\Maxsys\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.24.0\\system.identitymodel.tokens.jwt.6.24.0.nupkg.sha512",
+    "C:\\Users\\Maxsys\\.nuget\\packages\\system.linq.dynamic.core\\1.3.5\\system.linq.dynamic.core.1.3.5.nupkg.sha512",
     "C:\\Users\\Maxsys\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\Maxsys\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
     "C:\\Users\\Maxsys\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
