@@ -105,5 +105,50 @@ namespace TatBlog.Services.Blogs
             return await _context.Set<Post>()
                 .AnyAsync(x => x.Id != postId && x.UrlSlug == slug, cancellationToken);
         }
+
+        public async Task GetTagBySlugAsync(string slug, CancellationToken cancellationToken = default)
+        {
+            return await _context.Set<Tag>()
+                .FirstOrDefaultAsync(x => x.UrlSlug == slug, cancellationToken);
+        }
+
+        public async Task<IList<TagItem>> GetAllTagsWithPostCountAsync(CancellationToken cancellationToken = default)
+        {
+            return await _context.Set<TagItem>()
+            .Select(x => new TagItem()
+            {
+                Id = x.Id,
+                Name = x.Name,
+                UrlSlug = x.UrlSlug,
+                Description = x.Description,
+                PostCount = x.PostCount.Count(p => p.Published)
+            })
+            .ToListAsync(cancellationToken);
+        }
+
+        public async Task DeleteTagAsync(int tagId, CancellationToken cancellationToken = default)
+        {
+            var tag = await _context.Set<Tag>().FindAsync(tagId);
+
+            if (tag != null)
+            {
+                _context.Set<Tag>().Remove(tag);
+                await _context.SaveChangesAsync(cancellationToken);
+                return true;
+            }
+
+            return false;
+        }
+
+        public async Task GetCategoryBySlugAsync(string slug, CancellationToken cancellationToken = default)
+        {
+            return await _context.Set<Category>()
+        .FirstOrDefaultAsync(x => x.UrlSlug == slug, cancellationToken);
+        }
+
+        public async Task GetCategoryByIdAsync(int categoryId, CancellationToken cancellationToken = default)
+        {
+            return await _context.Set<Category>().FindAsync(categoryId);
+        }
     }
 }
