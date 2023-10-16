@@ -21,6 +21,13 @@ namespace TatBlog.Data.Mappings
                 .HasMaxLength(500)
                 .IsRequired();
 
+            builder.Property(p => p.Content)
+                .HasMaxLength(500)
+                .IsRequired();
+
+            builder.Property(p => p.CreatedDate)
+                .HasColumnType("datetime");
+
             builder.Property(p => p.ShortDescription)
                 .HasMaxLength(5000)
                 .IsRequired();
@@ -69,6 +76,10 @@ namespace TatBlog.Data.Mappings
             builder.HasMany(p => p.Tags)
                 .WithMany(t => t.Posts)
                 .UsingEntity(pt => pt.ToTable("PostTags"));
+
+            builder.HasMany(p => p.Comments)
+                .WithMany(t => t.Posts)
+                .UsingEntity(pt => pt.ToTable("CommentTags"));
         }
     }
 }

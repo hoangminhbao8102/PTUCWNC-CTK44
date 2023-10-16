@@ -13,6 +13,10 @@ namespace TatBlog.Core.Entities
 
         public string Title { get; set; }
 
+        public string Content { get; set; }
+
+        public DateTime CreatedDate { get; set; }
+
         public string ShortDescription { get; set; }
 
         public string Description { get; set; }
@@ -40,5 +44,7 @@ namespace TatBlog.Core.Entities
         public Author Author { get; set; }
 
         public IList<Tag> Tags { get; set; }
+
+        public IList<Comment> Comments { get; set; }
     }
 }
