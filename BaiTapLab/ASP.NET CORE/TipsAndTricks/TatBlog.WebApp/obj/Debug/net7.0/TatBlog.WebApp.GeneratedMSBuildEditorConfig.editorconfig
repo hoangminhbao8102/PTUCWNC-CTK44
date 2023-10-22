@@ -16,6 +16,26 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\PhatTrienUngDungWebNangCao\PTUCWNC-CTK44\BaiTapLab\ASP.NET CORE\TipsAndTricks\TatBlog.WebApp
 build_property._RazorSourceGeneratorDebug = 
 
+[E:/PhatTrienUngDungWebNangCao/PTUCWNC-CTK44/BaiTapLab/ASP.NET CORE/TipsAndTricks/TatBlog.WebApp/Views/Blog/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PhatTrienUngDungWebNangCao/PTUCWNC-CTK44/BaiTapLab/ASP.NET CORE/TipsAndTricks/TatBlog.WebApp/Views/Blog/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xDb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PhatTrienUngDungWebNangCao/PTUCWNC-CTK44/BaiTapLab/ASP.NET CORE/TipsAndTricks/TatBlog.WebApp/Views/Blog/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PhatTrienUngDungWebNangCao/PTUCWNC-CTK44/BaiTapLab/ASP.NET CORE/TipsAndTricks/TatBlog.WebApp/Views/Blog/_PostList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xfUG9zdExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PhatTrienUngDungWebNangCao/PTUCWNC-CTK44/BaiTapLab/ASP.NET CORE/TipsAndTricks/TatBlog.WebApp/Views/Blog/_TagList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xfVGFnTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/PhatTrienUngDungWebNangCao/PTUCWNC-CTK44/BaiTapLab/ASP.NET CORE/TipsAndTricks/TatBlog.WebApp/Views/Shared/_Header.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IZWFkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

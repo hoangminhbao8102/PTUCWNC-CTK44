@@ -1,0 +1,20 @@
+﻿@model IPagedList<Post>
+
+@{
+    ViewData["PageTitle"] = "Trang chủ";
+}
+
+<h1>
+    Đây là trang chủ
+</h1>
+
+<p>
+    Bây giở là: @ViewBag.CurrentTime
+</p>
+
+<div class="p-4">
+    @foreach (var postList in Model)
+    {
+        <partial name="_PostList" model="postList"/>
+    }
+</div>

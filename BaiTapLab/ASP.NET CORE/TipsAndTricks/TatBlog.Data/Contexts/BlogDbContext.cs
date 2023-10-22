@@ -23,6 +23,11 @@ namespace TatBlog.Data.Contexts
 
         public DbSet<Comment> Comments { get; set; }
 
+        public BlogDbContext(DbContextOptions<BlogDbContext> options) : base(options)
+        {
+            
+        }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(@"Server=LAPTOP-01O105KM\SQLEXPRESS;Database=TatBlog;User=LAPTOP-01O105KM\Maxsys;
