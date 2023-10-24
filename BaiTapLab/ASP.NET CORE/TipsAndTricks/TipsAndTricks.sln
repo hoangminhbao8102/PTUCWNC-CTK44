@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TatBlog.Services", "TatBlog
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TatBlog.WinApp", "TatBlog.WinApp\TatBlog.WinApp.csproj", "{0F1075D7-2F87-43AB-A95A-CA1EEC70D295}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TatBlog.WebApp", "TatBlog.WebApp\TatBlog.WebApp.csproj", "{8AF68534-398D-436F-9D54-2C385A257BEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TatBlog.WebApp", "TatBlog.WebApp\TatBlog.WebApp.csproj", "{8AF68534-398D-436F-9D54-2C385A257BEB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

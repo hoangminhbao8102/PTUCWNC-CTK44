@@ -30,8 +30,8 @@ namespace TatBlog.Data.Contexts
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=LAPTOP-01O105KM\SQLEXPRESS;Database=TatBlog;User=LAPTOP-01O105KM\Maxsys;
-                TrustServerCertificate=True;MultipleActiveResultSets=true");
+            optionsBuilder.UseSqlServer(@"Server=LAPTOP-01O105KM\SQLEXPRESS; Database=TatBlog;
+                TrustServerCertificate=True; MultipleActiveResultSets=true");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

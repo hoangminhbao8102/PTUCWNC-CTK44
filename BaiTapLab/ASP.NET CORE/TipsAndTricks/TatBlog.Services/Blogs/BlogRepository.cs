@@ -478,5 +478,17 @@ namespace TatBlog.Services.Blogs
 
             return posts;
         }
+
+        public async Task<Post> GetPostBySlugAsync(string slug, CancellationToken cancellationToken = default)
+        {
+            var post = await _context.Posts.FirstOrDefaultAsync(p => p.UrlSlug == slug, cancellationToken);
+            return post;
+        }
+
+        public async Task UpdatePostAsync(Post post, CancellationToken cancellationToken = default)
+        {
+            _context.Posts.Update(post);
+            await _context.SaveChangesAsync(cancellationToken);
+        }
     }
 }

@@ -21,13 +21,6 @@ namespace TatBlog.Data.Mappings
                 .HasMaxLength(500)
                 .IsRequired();
 
-            builder.Property(p => p.Content)
-                .HasMaxLength(500)
-                .IsRequired();
-
-            builder.Property(p => p.CreatedDate)
-                .HasColumnType("datetime");
-
             builder.Property(p => p.ShortDescription)
                 .HasMaxLength(5000)
                 .IsRequired();

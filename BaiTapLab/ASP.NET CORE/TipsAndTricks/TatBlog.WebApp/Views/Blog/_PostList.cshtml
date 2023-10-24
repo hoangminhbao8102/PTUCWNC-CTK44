@@ -1,9 +1,7 @@
 ﻿@model Post
 
 @{
-    var imageUrl = string.IsNullOrWhiteSpace(Model.ImageUrl)
-            ? "/images/image_1.jpg"
-            : $"/{Model.ImageUrl}";
+    var imageUrl = string.IsNullOrWhiteSpace(Model.ImageUrl) ? "/images/image_1.jpg" : $"/{Model.ImageUrl}";
 }
 
 <article class="blog-entry mb-4">
@@ -17,21 +15,17 @@
             <div class="col-md-8">
                 <div class="card-body">
                     <h5 class="card-title">
-                        @Model.Title
+                        <a href="@Url.Action("Post", "Blog", new { Year = Model.PostedDate.Year, Month = Model.PostedDate.Month, Day = Model.PostedDate.Day, Slug = Model.UrlSlug })">@Model.Title</a>
                     </h5>
                     <p class="card-text">
                         <small class="text-muted">
                             Tác giả:
                         </small>
-                        <span class="text-primary">
-                            @Model.Author.FullName
-                        </span>
+                        <a href="@Url.Action("Author", "Blog", new { FullName = Model.Author.FullName })" class="text-primary">@Model.Author.FullName</a>
                         <small class="text-muted">
                             Chủ đề:
                         </small>
-                        <span class="text-primary">
-                            @Model.Category.Name
-                        </span>
+                        <a href="@Url.Action("Category", "Blog", new { CategoryName = Model.Category.Name })" class="text-primary">@Model.Category.Name</a>
                     </p>
                     <p class="card-text">
                         @Html.Raw(Model.ShortDescription)
