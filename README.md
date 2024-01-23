@@ -1,4 +1,4 @@
-Môn học "Phát triển ứng dụng web nâng cao"
+<strong>Môn học "Phát triển ứng dụng web nâng cao"</strong>
 
 Chuyên ngành: Kỹ thuật phần mềm 
 
