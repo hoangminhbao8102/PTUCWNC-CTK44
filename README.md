@@ -12,6 +12,8 @@ Thời gian học lý thuyết: (Tối Thứ Hai (2 buổi đầu) & Sáng Thứ
 
 Thời gian học thực hành: (Tối Thứ Năm hàng tuần) 02/03/2023 - 20/04/2023
 
+Hoc kì II- Năm 3 (2022 - 2023)
+
 Giáo viên giảng dạy: Thầy Nguyễn Văn Phúc
 
 Giáo viên hướng dẫn thực hành: Anh La Quốc Thắng
