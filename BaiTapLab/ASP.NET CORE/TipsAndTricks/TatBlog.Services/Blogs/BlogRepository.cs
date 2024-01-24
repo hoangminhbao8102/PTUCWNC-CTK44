@@ -490,5 +490,30 @@ namespace TatBlog.Services.Blogs
             _context.Posts.Update(post);
             await _context.SaveChangesAsync(cancellationToken);
         }
+
+        public Task<string> GetArchivesAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<string> GetBestAuthorsAsync(int v)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<string> GetFeaturedPostsAsync(int v)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<string> GetRandomPostsAsync(int v)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<string> GetAllTagsAsync()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

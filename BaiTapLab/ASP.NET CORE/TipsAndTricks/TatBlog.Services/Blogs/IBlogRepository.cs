@@ -68,5 +68,10 @@ namespace TatBlog.Services.Blogs
         Task<Post> GetPostBySlugAsync(string slug, CancellationToken cancellationToken = default);
 
         Task UpdatePostAsync(Post post, CancellationToken cancellationToken = default);
+        Task<string> GetArchivesAsync();
+        Task<string> GetBestAuthorsAsync(int v);
+        Task<string> GetFeaturedPostsAsync(int v);
+        Task<string> GetRandomPostsAsync(int v);
+        Task<string> GetAllTagsAsync();
     }
 }
