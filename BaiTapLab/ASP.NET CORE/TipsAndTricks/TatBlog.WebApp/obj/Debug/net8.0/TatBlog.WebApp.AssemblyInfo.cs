@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TatBlog.WebApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d3d9606b6d76ba86ef06b42c2d67ba0aafef4c3f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+53ccb7c08cc1f0715963bdd7c33e7d4dad0e3ccf")]
 [assembly: System.Reflection.AssemblyProductAttribute("TatBlog.WebApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TatBlog.WebApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -11,7 +11,7 @@ namespace TatBlog.Services.Blogs
 {
     public interface IBlogRepository
     {
-        Task<Post> GetPostAsync(int year, int month, string slug, CancellationToken cancellationToken = default);
+        Task<Post> GetPostAsync(int year, int month, int day, string slug, CancellationToken cancellationToken = default);
 
         Task<IList<Post>> GetPopularArticlesAsync(int numPosts, CancellationToken cancellationToken = default);
 
@@ -68,10 +68,5 @@ namespace TatBlog.Services.Blogs
         Task<Post> GetPostBySlugAsync(string slug, CancellationToken cancellationToken = default);
 
         Task UpdatePostAsync(Post post, CancellationToken cancellationToken = default);
-        Task<string> GetArchivesAsync();
-        Task<string> GetBestAuthorsAsync(int v);
-        Task<string> GetFeaturedPostsAsync(int v);
-        Task<string> GetRandomPostsAsync(int v);
-        Task<string> GetAllTagsAsync();
     }
 }

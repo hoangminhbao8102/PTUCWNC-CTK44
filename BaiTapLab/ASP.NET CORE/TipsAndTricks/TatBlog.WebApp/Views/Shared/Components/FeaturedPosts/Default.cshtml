@@ -1,9 +1,0 @@
-﻿@model List<Post>
-
-<h4>Featured Posts</h4>
-<ul>
-    @foreach (var post in Model)
-    {
-        <li><a href="@Url.Action("Details", "Post", new { slug = post.UrlSlug })">@post.Title</a></li>
-    }
-</ul>

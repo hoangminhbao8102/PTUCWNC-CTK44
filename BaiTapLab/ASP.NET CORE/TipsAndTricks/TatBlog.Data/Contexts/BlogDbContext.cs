@@ -28,10 +28,10 @@ namespace TatBlog.Data.Contexts
             
         }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        /*protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(@"Server=LAPTOP-01O105KM\SQLEXPRESS; Database=TatBlog; User ID=sa; Password=minhbao8102; TrustServerCertificate=true; Trusted_Connection=false; MultipleActiveResultSets=true");
-        }
+        }*/
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

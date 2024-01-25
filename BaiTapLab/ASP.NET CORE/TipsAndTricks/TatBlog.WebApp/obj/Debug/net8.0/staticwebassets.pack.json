@@ -929,10 +929,6 @@
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\methods_pt.min.js"
     },
     {
-      "Id": "E:\\PhatTrienUngDungWebNangCao\\PTUCWNC-CTK44\\BaiTapLab\\ASP.NET CORE\\TipsAndTricks\\TatBlog.WebApp\\wwwroot\\lib\\jquery-validation\\package.json",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\package.json"
-    },
-    {
       "Id": "E:\\PhatTrienUngDungWebNangCao\\PTUCWNC-CTK44\\BaiTapLab\\ASP.NET CORE\\TipsAndTricks\\TatBlog.WebApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
@@ -963,6 +959,18 @@
     {
       "Id": "E:\\PhatTrienUngDungWebNangCao\\PTUCWNC-CTK44\\BaiTapLab\\ASP.NET CORE\\TipsAndTricks\\TatBlog.WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
+    },
+    {
+      "Id": "E:\\PhatTrienUngDungWebNangCao\\PTUCWNC-CTK44\\BaiTapLab\\ASP.NET CORE\\TipsAndTricks\\TatBlog.WebApp\\wwwroot\\lib\\speakingurl\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\speakingurl"
+    },
+    {
+      "Id": "E:\\PhatTrienUngDungWebNangCao\\PTUCWNC-CTK44\\BaiTapLab\\ASP.NET CORE\\TipsAndTricks\\TatBlog.WebApp\\wwwroot\\lib\\speakingurl\\README.md",
+      "PackagePath": "staticwebassets\\lib\\speakingurl\\README.md"
+    },
+    {
+      "Id": "E:\\PhatTrienUngDungWebNangCao\\PTUCWNC-CTK44\\BaiTapLab\\ASP.NET CORE\\TipsAndTricks\\TatBlog.WebApp\\wwwroot\\lib\\speakingurl\\speakingurl.min.js",
+      "PackagePath": "staticwebassets\\lib\\speakingurl\\speakingurl.min.js"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.TatBlog.WebApp.Microsoft.AspNetCore.StaticWebAssets.props",

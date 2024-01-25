@@ -2,7 +2,7 @@
 using TatBlog.Data.Contexts;
 using TatBlog.Data.Seeders;
 using TatBlog.Services.Blogs;
-using TatBlog.WebApp.Components;
+using TatBlog.Services.Media;
 
 namespace TatBlog.WebApp.Extensions
 {
@@ -20,13 +20,9 @@ namespace TatBlog.WebApp.Extensions
         {
             builder.Services.AddDbContext<BlogDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+            builder.Services.AddScoped<IMediaManager, LocalFileSystemMediaManager>();
             builder.Services.AddScoped<IBlogRepository, BlogRepository>();
             builder.Services.AddScoped<IDataSeeder, DataSeeder>();
-            builder.Services.AddScoped<FeaturedPostsViewComponent>();
-            builder.Services.AddScoped<RandomPostsViewComponent>();
-            builder.Services.AddScoped<TagCloudViewComponent>();
-            builder.Services.AddScoped<BestAuthorsViewComponent>();
-            builder.Services.AddScoped<ArchivesViewComponent>();
 
             return builder;
         }
@@ -63,10 +59,9 @@ namespace TatBlog.WebApp.Extensions
             {
                 scope.ServiceProvider.GetRequiredService<IDataSeeder>().Initialize();
             }
-            catch (Exception ex)
+            catch (Exception ex) 
             {
                 scope.ServiceProvider.GetRequiredService<ILogger<Program>>().LogError(ex, "Could not insert data into database");
-                throw;
             }
 
             return app;

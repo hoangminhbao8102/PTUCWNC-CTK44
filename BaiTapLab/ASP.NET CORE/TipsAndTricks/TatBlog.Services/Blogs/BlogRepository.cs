@@ -70,7 +70,7 @@ namespace TatBlog.Services.Blogs
                 .ToListAsync(cancellationToken);
         }
 
-        public async Task<Post> GetPostAsync(int year, int month, string slug, CancellationToken cancellationToken = default)
+        public async Task<Post> GetPostAsync(int year, int month, int day, string slug, CancellationToken cancellationToken = default)
         {
             IQueryable<Post> postsQuery = _context.Set<Post>()
                 .Include(x => x.Category)
@@ -84,6 +84,11 @@ namespace TatBlog.Services.Blogs
             if (month > 0)
             {
                 postsQuery = postsQuery.Where(x => x.PostedDate.Month == month);
+            }
+
+            if (day > 0)
+            {
+                postsQuery = postsQuery.Where(x => x.PostedDate.Day == day);
             }
 
             if (!string.IsNullOrEmpty(slug))
@@ -489,31 +494,6 @@ namespace TatBlog.Services.Blogs
         {
             _context.Posts.Update(post);
             await _context.SaveChangesAsync(cancellationToken);
-        }
-
-        public Task<string> GetArchivesAsync()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<string> GetBestAuthorsAsync(int v)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<string> GetFeaturedPostsAsync(int v)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<string> GetRandomPostsAsync(int v)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<string> GetAllTagsAsync()
-        {
-            throw new NotImplementedException();
         }
     }
 }

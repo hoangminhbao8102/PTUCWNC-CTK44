@@ -13,34 +13,14 @@ namespace TatBlog.WebApp.Controllers
             _blogRepository = blogRepository;
         }
 
-        public IActionResult Index()
+        /*public IActionResult Index()
         {
             ViewBag.CurrentTime = DateTime.Now.ToString("HH:mm:ss");
 
             return View();
-        }
+        }*/
 
-        public async Task<IActionResult> Index(
-            [FromQuery(Name = "p")] int pageNumber = 1,
-            [FromQuery(Name = "ps")] int pageSize = 10)
-        {
-            var postQuery = new PostQuery()
-            {
-                PublishedOnly = true
-            };
-
-            var postsList = await _blogRepository
-                .GetPagedPostsAsync(postQuery, pageNumber, pageSize);
-
-            ViewBag.PostQuery = postQuery;
-
-            return View(postsList);
-        }
-
-        public async Task<IActionResult> Index(
-            [FromQuery(Name = "k")] string keyword = "",
-            [FromQuery(Name = "p")] int pageNumber = 1,
-            [FromQuery(Name = "ps")] int pageSize = 10)
+        public async Task<IActionResult> Index([FromQuery(Name = "k")] string keyword = null, [FromQuery(Name = "p")] int pageNumber = 1, [FromQuery(Name = "ps")] int pageSize = 10)
         {
             var postQuery = new PostQuery()
             {
@@ -48,100 +28,67 @@ namespace TatBlog.WebApp.Controllers
                 Keyword = keyword
             };
 
-            var postsList = await _blogRepository
-                .GetPagedPostsAsync(postQuery, pageNumber, pageSize);
+            var postsList = await _blogRepository.GetPagedPostsAsync(postQuery, pageNumber, pageSize);
 
-            ViewBag.PostQuery = postQuery;
+            ViewBag.PostQuery = postsList;
 
             return View(postsList);
         }
 
-        public async Task<IActionResult> Category(string slug, int pageNumber = 1, int pageSize = 10)
+        public async Task<IActionResult> Category(string slug)
         {
-            var postQuery = new PostQuery()
-            {
-                PublishedOnly = true,
-                CategorySlug = slug
-            };
+            var posts = await _blogRepository.GetCategoryAsync(slug);
 
-            var postsList = await _blogRepository.GetPagedPostsAsync(postQuery, pageNumber, pageSize);
-
-            ViewBag.PostQuery = postQuery;
-
-            return View(postsList);
+            return View(posts);
         }
 
-        public async Task<IActionResult> Author(string slug, int pageNumber = 1, int pageSize = 10)
+        public async Task<IActionResult> Author(string slug)
         {
-            var postQuery = new PostQuery()
-            {
-                PublishedOnly = true,
-                AuthorSlug = slug
-            };
+            var posts = await _blogRepository.GetAuthorAsync(slug);
 
-            var postsList = await _blogRepository.GetPagedPostsAsync(postQuery, pageNumber, pageSize);
-
-            ViewBag.PostQuery = postQuery;
-
-            return View(postsList);
+            return View(posts);
         }
 
-        public async Task<IActionResult> Tag(string slug, int pageNumber = 1, int pageSize = 10)
+        public async Task<IActionResult> Tag(string slug)
         {
-            var postQuery = new PostQuery()
-            {
-                PublishedOnly = true,
-                TagSlug = slug
-            };
+            var posts = await _blogRepository.GetTagAsync(slug);
 
-            var postsList = await _blogRepository.GetPagedPostsAsync(postQuery, pageNumber, pageSize);
-
-            ViewBag.PostQuery = postQuery;
-
-            return View(postsList);
+            return View(posts);
         }
 
         public async Task<IActionResult> Post(int year, int month, int day, string slug)
         {
-            var post = await _blogRepository.GetPostBySlugAsync(slug);
+            var post = await _blogRepository.GetPostAsync(year, month, day, slug);
 
             if (post == null || !post.Published)
             {
                 return NotFound();
             }
 
-            // Tăng số lượt xem của bài viết
             post.ViewCount++;
             await _blogRepository.UpdatePostAsync(post);
 
             return View(post);
         }
 
-        public async Task<IActionResult> Archives(int year, int month, int pageNumber = 1, int pageSize = 10)
+        public async Task<IActionResult> Archives(int year, int month)
         {
-            var postQuery = new PostQuery()
+            PostQuery query = new PostQuery
             {
-                PublishedOnly = true,
                 Year = year,
                 Month = month
             };
 
-            var postsList = await _blogRepository.GetPagedPostsAsync(postQuery, pageNumber, pageSize);
+            var posts = await _blogRepository.GetPostBySlugAsync("");
 
-            ViewBag.PostQuery = postQuery;
+            ViewData["PostQuery"] = query;
 
-            return View(postsList);
+            return View(posts);
         }
 
-        public IActionResult Contact()
-        {
-            return View();
-        }
+        public IActionResult About() => View();
 
-        public IActionResult About()
-        {
-            return View();
-        }
+        public IActionResult Contact() => View();
 
         public IActionResult Rss() => Content("Nội dung sẽ được cập nhật");
     }

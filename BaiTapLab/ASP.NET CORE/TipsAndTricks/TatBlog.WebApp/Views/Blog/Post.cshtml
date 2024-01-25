@@ -1,7 +1,0 @@
-﻿@model Post
-
-<h2>@Model.Title</h2>
-<p>Tác giả: <a href="@Url.Action("Author", "Blog", new { slug = Model.Author.UrlSlug })">@Model.Author.FullName</a></p>
-<p>Chủ đề: <a href="@Url.Action("Category", "Blog", new { slug = Model.Category.UrlSlug })">@Model.Category.Name</a></p>
-<p>@Model.Title</p>
-<p>Lượt xem: @Model.ViewCount</p>
