@@ -1,11 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Microsoft.Extensions.Caching.Memory;
-using System.Linq.Dynamic.Core;
 using TatBlog.Core.Contracts;
 using TatBlog.Core.DTO;
 using TatBlog.Core.Entities;
@@ -83,21 +77,27 @@ public class AuthorRepository : IAuthorRepository
 		string name = null,
 		CancellationToken cancellationToken = default)
 	{
-		return await _context.Set<Author>()
-			.AsNoTracking()
-            .Where(x => string.IsNullOrWhiteSpace(name) || x.FullName.Contains(name))
-			.Select(a => new AuthorItem()
-			{
-				Id = a.Id,
-				FullName = a.FullName,
-				Email = a.Email,
-				JoinedDate = a.JoinedDate,
-				ImageUrl = a.ImageUrl,
-				UrlSlug = a.UrlSlug,
-				PostCount = a.Posts.Count(p => p.Published)
-			})
-			.ToPagedListAsync(pagingParams, cancellationToken);
-	}
+        var query = _context.Set<Author>()
+        .AsNoTracking();
+
+        if (!string.IsNullOrWhiteSpace(name))
+        {
+            query = query.Where(x => x.FullName.Contains(name));
+        }
+
+        return await query
+            .Select(a => new AuthorItem()
+            {
+                Id = a.Id,
+                FullName = a.FullName,
+                Email = a.Email,
+                JoinedDate = a.JoinedDate,
+                ImageUrl = a.ImageUrl,
+                UrlSlug = a.UrlSlug,
+                PostCount = a.Posts.Count(p => p.Published)
+            })
+            .ToPagedListAsync(pagingParams, cancellationToken);
+    }
 
 	public async Task<IPagedList<T>> GetPagedAuthorsAsync<T>(
 		Func<IQueryable<Author>, IQueryable<T>> mapper,

@@ -1,0 +1,6 @@
+@TatBlog.WebApi_HostAddress = http://localhost:5190
+
+GET {{TatBlog.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
